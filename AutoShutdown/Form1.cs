@@ -1,27 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace AutoShutdown
 {
     public partial class Form1 : Form
     {
-        System.Threading.Timer timer;
-        bool shutdown = true;
+        private System.Threading.Timer timer;
+        private bool shutdown = true;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        public static void ShutdownWithCmd(int secondsUntilShutdown)
+        private static void ShutdownWithCmd(int secondsUntilShutdown)
         {
             string command = $"-s -t {secondsUntilShutdown}";
             if(File.Exists("C:\\Windows\\System32\\shutdown.exe"))
@@ -32,14 +26,12 @@ namespace AutoShutdown
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer = new System.Threading.Timer((object state) => 
+            timer = new System.Threading.Timer(state => 
             {
                 Debug.WriteLine("debug");
-                if (shutdown) 
-                {
-                    Debug.WriteLine("shutdown");
-                    ShutdownWithCmd(1);
-                }
+                if (!shutdown) return;
+                Debug.WriteLine("shutdown");
+                ShutdownWithCmd(1);
             }
             ,null,TimeSpan.FromSeconds(60),TimeSpan.FromSeconds(60));
         }
