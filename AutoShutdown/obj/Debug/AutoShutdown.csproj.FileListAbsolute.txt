@@ -1,0 +1,10 @@
+F:\sp\AutoShutdown\AutoShutdown\bin\Debug\AutoShutdown.exe
+F:\sp\AutoShutdown\AutoShutdown\bin\Debug\AutoShutdown.pdb
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.csproj.AssemblyReference.cache
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.Form1.resources
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.Properties.Resources.resources
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.csproj.GenerateResource.cache
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.csproj.CoreCompileInputs.cache
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.exe
+F:\sp\AutoShutdown\AutoShutdown\obj\Debug\AutoShutdown.pdb
+F:\sp\AutoShutdown\AutoShutdown\bin\Debug\AutoShutdown.exe.config
